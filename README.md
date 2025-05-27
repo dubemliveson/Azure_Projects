@@ -44,11 +44,11 @@ Azure_Projects/
 
 ## 🎛 Current Projects
 
-- Functions/EchoSample:
+- **Functions/EchoSample:**
     A minimal C# HTTP-triggered function that echoes payloads.
-- Functions/SettingsReader:
+- **Functions/SettingsReader:**
     Demo of reading and returning Azure Function App Settings.
-- Functions/RecurringJob:
+- **Functions/RecurringJob:**
     Timer-triggered function that runs on a schedule.
 (*More coming soon…*)
 
