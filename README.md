@@ -28,7 +28,7 @@ This repo is intended as a one-stop shop for your Azure samples and automation. 
 ```plaintext
 Azure_Projects/
 ├── Functions/            ← C# / JavaScript / Python Azure Functions apps
-│   ├── C#/               ← C#
+│   └── C#/               ← C#
 │       ├── ProjectOne/         ← Function app “ProjectOne”
 │       └── ProjectTwo/         ← Function app “ProjectTwo”
 ├── APIM/                 ← Azure API Management configs & policies
