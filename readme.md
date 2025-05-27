@@ -3,7 +3,7 @@
 A sample C# Azure Functions solution demonstrating:
 
 - **HTTP-triggered** functions (`Echo`, `GetSettingInfo`)  
-- **Timer-triggered** (“recurring”) functions  
+- **Timer-triggered** (“`recurring`”) functions  
 - Configuration via **Application Settings**  
 - Local emulation and cloud deployment  
 
