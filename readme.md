@@ -20,7 +20,8 @@ A sample C# Azure Functions solution demonstrating:
    - [Testing](#testing)  
 5. [Deployment](#deployment)  
 6. [Configuration](#configuration)  
-7. [Contributing](#contributing)  
+7. [Contributing](#contributing)
+8. [Additional Resources](#additional-resources)
 
 ---
 
@@ -28,9 +29,10 @@ A sample C# Azure Functions solution demonstrating:
 
 This repository contains a .NET 8.0 Azure Functions app showcasing:
 
-- **`Echo`** — An HTTP-triggered function that echoes back request payloads.  
-- **`GetSettingInfo`** — Reads from Application Settings (environment) and returns key values.  
+- **`Echo`** — An HTTP-triggered function that echoes back request payloads.
 - **`Recurring`** — A Timer-triggered function running on a schedule (default: every 5 minutes).  
+- **`GetSettingInfo`** — Reads from Application Settings (environment) and returns key values.  
+
 
 Use this as a starter template for building serverless workflows on Azure Functions.
 
@@ -140,4 +142,13 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 4. Open a Pull Request
 
 
+## Additional Resources
+
+## Additional Resources
+
+- **Step-by-Step Azure Functions Tutorial**  
+  A full walkthrough of building and deploying these Azure Functions in C#.  
+  Read it here: [Building Azure Functions with C#][azure-func-tutorial]
+
+[azure-func-tutorial]: [Azure Functions Tutorial](https://dev.to/dubemliveson/how-i-built-my-first-serverless-app-in-azure-lessons-learned-for-beginners-3j3b)
 
