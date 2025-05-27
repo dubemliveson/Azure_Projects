@@ -95,6 +95,7 @@ curl -X POST http://localhost:7071/api/Echo \
      -H "Content-Type: application/json" \
      -d '{"message":"hello"}'`
 ```
+<br>
 
 ## ☁️ Deployment
 
@@ -115,6 +116,8 @@ az functionapp create \
 3. **Publish** from your workspace:
 `func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
 
+<br>
+
 ## 🔧 Configuration
 
 All app settings (connection strings, custom settings, etc.) live in Azure’s *Configuration* blade or your local `local.settings.json`.
@@ -134,6 +137,8 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 
 `GET /api/GetSettingInfo?key=MyCustomSetting`
 
+<br>
+
 ## 🤝 Contributing
 
 1. Fork the repo
@@ -141,8 +146,7 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 3. Commit your changes
 4. Open a Pull Request
 
-
-## Additional Resources
+<br>
 
 ## Additional Resources
 
