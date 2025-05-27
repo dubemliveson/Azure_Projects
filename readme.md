@@ -97,10 +97,10 @@ curl -X POST http://localhost:7071/api/Echo \
 
 ## Deployment
 
-1. *Login* to Azure CLI:
+1. **Login** to Azure CLI:
 `az login`
 
-2. *Create* a Function App (one-time):
+2. **Create** a Function App (one-time):
 ```bash
 az functionapp create \
   --resource-group MyResourceGroup \
@@ -111,7 +111,7 @@ az functionapp create \
   --storage-account <YOUR_STORAGE_ACCOUNT>`
 ```
 
-3. *Publish* from your workspace:
+3. **Publish** from your workspace:
 `func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
 
 ## Configuration
