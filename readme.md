@@ -148,7 +148,5 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 
 - **Step-by-Step Azure Functions Tutorial**  
   A full walkthrough of building and deploying these Azure Functions in C#.  
-  Read it here: [Building Azure Functions with C#][azure-func-tutorial]
-
-[azure-func-tutorial]: [Azure Functions Tutorial](https://dev.to/dubemliveson/how-i-built-my-first-serverless-app-in-azure-lessons-learned-for-beginners-3j3b)
+  Read it here: [Building Azure Functions with C#](https://dev.to/dubemliveson/how-i-built-my-first-serverless-app-in-azure-lessons-learned-for-beginners-3j3b)
 
