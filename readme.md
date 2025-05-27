@@ -70,11 +70,15 @@ cd Azure_Projects
 ```
 
 Restore NuGet packages:
-```dotnet restore```
+```bash 
+dotnet restore
+```
 
 ### Running Locally
 Start the Functions host:
-```func start```
+```bash 
+func start
+```
 
 - **HTTP APIs**
   - `Echo`: `GET|POST http://localhost:7071/api/Echo`
