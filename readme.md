@@ -85,7 +85,8 @@ Start the Functions host:
 
 ### Testing
 You can exercise the HTTP functions via cURL, Postman, or your browser:
-```bash curl -X POST http://localhost:7071/api/Echo \
+```bash
+curl -X POST http://localhost:7071/api/Echo \
      -H "Content-Type: application/json" \
      -d '{"message":"hello"}'`
 ```
@@ -96,7 +97,8 @@ You can exercise the HTTP functions via cURL, Postman, or your browser:
 `az login`
 
 2. Create a Function App (one-time):
-```bash az functionapp create \
+```bash
+az functionapp create \
   --resource-group MyResourceGroup \
   --consumption-plan-location westus \
   --runtime dotnet \
