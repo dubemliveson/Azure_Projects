@@ -25,7 +25,7 @@ A sample C# Azure Functions solution demonstrating:
 
 ---
 
-## Project Overview
+## 📝 Project Overview
 
 This repository contains a .NET 8.0 Azure Functions app showcasing:
 
@@ -148,7 +148,7 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 
 <br>
 
-## Additional Resources
+## 📚 Additional Resources
 
 - **Step-by-Step Azure Functions Tutorial**  
   A full walkthrough of building and deploying these Azure Functions in C#.  
