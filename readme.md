@@ -47,7 +47,7 @@ Use this as a starter template for building serverless workflows on Azure Functi
 ---
 
 ## Solution Structure
-
+```plaintext
 Azure_Projects/
 ├── .vscode/ ← VS Code launch/debug settings
 ├── Echo.cs ← HTTP Trigger: echo back request data
@@ -56,7 +56,7 @@ Azure_Projects/
 ├── host.json ← Functions host configuration
 ├── func.csproj ← C# project file & NuGet dependencies
 └── readme.md ← (this file)
-
+```
 
 ---
 
