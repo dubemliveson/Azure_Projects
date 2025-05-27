@@ -21,7 +21,6 @@ A sample C# Azure Functions solution demonstrating:
 5. [Deployment](#deployment)  
 6. [Configuration](#configuration)  
 7. [Contributing](#contributing)  
-8. [License](#license)  
 
 ---
 
