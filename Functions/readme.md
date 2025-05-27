@@ -63,7 +63,7 @@ Azure_Projects/
 
 ## 🚀 Getting Started
 
-- ### Cloning & Setup
+1. ### Cloning & Setup
 
 ```bash
 git clone https://github.com/dubemliveson/Azure_Projects.git
@@ -75,7 +75,7 @@ Restore NuGet packages:
 dotnet restore
 ```
 
-- ### Running Locally
+2. ### Running Locally
 Start the Functions host:
 ```bash 
 func start
@@ -89,7 +89,7 @@ func start
   - `Recurring` will run automatically on startup and every 5 minutes by default.
 
 ### 🧪 Testing
-You can exercise the HTTP functions via *cURL*, *Postman*, or your browser:
+You can test the HTTP functions via **cURL**, **Postman**, or your browser:
 ```bash
 curl -X POST http://localhost:7071/api/Echo \
      -H "Content-Type: application/json" \
