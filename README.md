@@ -28,8 +28,9 @@ This repo is intended as a one-stop shop for your Azure samples and automation. 
 ```plaintext
 Azure_Projects/
 ├── Functions/            ← C# / JavaScript / Python Azure Functions apps
-│   ├── ProjectA/         ← Function app “ProjectA”
-│   └── ProjectB/         ← Function app “ProjectB”
+│   ├── C#/               ← C#
+│       ├── ProjectOne/         ← Function app “ProjectOne”
+│       └── ProjectTwo/         ← Function app “ProjectTwo”
 ├── APIM/                 ← Azure API Management configs & policies
 │   └── MyApi/            ← e.g. ARM/Bicep definitions for APIM instance
 ├── IaC/                  ← Infrastructure as Code (ARM, Bicep, Terraform)
