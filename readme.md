@@ -1,4 +1,4 @@
-# Azure_Projects
+# Creating a Function App
 
 A sample C# Azure Functions solution demonstrating:
 
@@ -85,9 +85,10 @@ Start the Functions host:
 
 ### Testing
 You can exercise the HTTP functions via cURL, Postman, or your browser:
-`curl -X POST http://localhost:7071/api/Echo \
+```bash curl -X POST http://localhost:7071/api/Echo \
      -H "Content-Type: application/json" \
      -d '{"message":"hello"}'`
+```
 
 ## Deployment
 
@@ -95,13 +96,14 @@ You can exercise the HTTP functions via cURL, Postman, or your browser:
 `az login`
 
 2. Create a Function App (one-time):
-`az functionapp create \
+```bash az functionapp create \
   --resource-group MyResourceGroup \
   --consumption-plan-location westus \
   --runtime dotnet \
   --functions-version 5 \
   --name <YOUR_FUNCTION_APP_NAME> \
   --storage-account <YOUR_STORAGE_ACCOUNT>`
+```
 
 3. Publish from your workspace:
 `func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
@@ -110,7 +112,8 @@ You can exercise the HTTP functions via cURL, Postman, or your browser:
 
 All app settings (connection strings, custom settings, etc.) live in Azure’s Configuration blade or your local `local.settings.json`.
 Be sure to add:
-```json {
+```json
+{
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "<Your_Storage_Conn_String>",
