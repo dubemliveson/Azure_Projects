@@ -77,14 +77,14 @@ Start the Functions host:
 ```func start```
 
 - **HTTP APIs**
- - `Echo`: `GET|POST http://localhost:7071/api/Echo`
- - `GetSettingInfo`:
+  - `Echo`: `GET|POST http://localhost:7071/api/Echo`
+  - `GetSettingInfo`:
 `GET http://localhost:7071/api/GetSettingInfo?key=<YourSettingName>`
 - **Timer Trigger**
- - `Recurring` will run automatically on startup and every 5 minutes by default.
+  - `Recurring` will run automatically on startup and every 5 minutes by default.
 
 ### Testing
-You can exercise the HTTP functions via cURL, Postman, or your browser:
+You can exercise the HTTP functions via *cURL*, *Postman*, or your browser:
 ```bash
 curl -X POST http://localhost:7071/api/Echo \
      -H "Content-Type: application/json" \
@@ -93,10 +93,10 @@ curl -X POST http://localhost:7071/api/Echo \
 
 ## Deployment
 
-1. Login to Azure CLI:
+1. *Login* to Azure CLI:
 `az login`
 
-2. Create a Function App (one-time):
+2. *Create* a Function App (one-time):
 ```bash
 az functionapp create \
   --resource-group MyResourceGroup \
@@ -107,12 +107,12 @@ az functionapp create \
   --storage-account <YOUR_STORAGE_ACCOUNT>`
 ```
 
-3. Publish from your workspace:
+3. *Publish* from your workspace:
 `func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
 
 ## Configuration
 
-All app settings (connection strings, custom settings, etc.) live in Azure’s Configuration blade or your local `local.settings.json`.
+All app settings (connection strings, custom settings, etc.) live in Azure’s *Configuration* blade or your local `local.settings.json`.
 Be sure to add:
 ```json
 {
@@ -125,7 +125,7 @@ Be sure to add:
 }
 ```
 
-You can then read MyCustomSetting via the GetSettingInfo function:
+You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 
 `GET /api/GetSettingInfo?key=MyCustomSetting`
 
