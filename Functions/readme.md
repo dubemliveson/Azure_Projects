@@ -104,7 +104,7 @@ curl -X POST http://localhost:7071/api/Echo \
 az login
 ```
 
-3. **Create** a Function App (one-time):
+2. **Create** a Function App (one-time):
 ```bash
 az functionapp create \
   --resource-group MyResourceGroup \
