@@ -1,4 +1,4 @@
-# Azure_Projects
+# ☁️ Azure Projects
 
 A central repository for all Azure-related code samples and automation.  
 Use this space to collect your Functions, API Management configurations, Infrastructure as Code, DevOps pipelines, and more—all organized by project type.
@@ -17,13 +17,13 @@ Use this space to collect your Functions, API Management configurations, Infrast
 
 ---
 
-## Overview
+## 📝 Overview
 
 This repo is intended as a one-stop shop for your Azure samples and automation. Keep each logical piece of work in its own folder—whether it’s a Functions app, an ARM template, a Bicep module, or an API Management deployment configuration.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```plaintext
 Azure_Projects/
@@ -50,7 +50,7 @@ Azure_Projects/
     Timer-triggered function that runs on a schedule.
 (*More coming soon…*)
 
-## Adding a New Project
+## 📥 Adding a New Project
 
 1. Choose a category (e.g. Functions, APIM, IaC, DevOps, docs).
 2. Create a new folder under that category with a descriptive name:
@@ -66,7 +66,7 @@ mkdir -p Functions/MyNewFunctionApp
 
 5. Commit & push, then update this top-level README.md under Current Projects.
 
-## Contributing
+## 🤝 Contributing
 1. Fork the repo.
 2. Create a feature branch:
 
@@ -78,7 +78,7 @@ git checkout -b feature/awesome-azure-sample
 
 <br>
 
-## Naming & Layout Conventions
+## 🗂 Naming & Layout Conventions
 
 - **Folder names:** PascalCase or kebab-case—choose one and stay consistent.
 - **IaC modules:** group by resource type (e.g. `Networking`, `Compute`, `Storage`).
@@ -87,7 +87,7 @@ git checkout -b feature/awesome-azure-sample
 
 <br>
 
-## Prerequisites & Tooling
+## ⚙️ Prerequisites & Tooling
 
 Depending on project type, you may need:
 - .NET SDK
