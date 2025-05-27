@@ -42,11 +42,11 @@ Azure_Projects/
 
 ## Current Projects
 
-- Functions/EchoSample
+- Functions/EchoSample:
     A minimal C# HTTP-triggered function that echoes payloads.
-- Functions/SettingsReader
+- Functions/SettingsReader:
     Demo of reading and returning Azure Function App Settings.
-- Functions/RecurringJob
+- Functions/RecurringJob:
     Timer-triggered function that runs on a schedule.
 (*More coming soon…*)
 
@@ -80,10 +80,10 @@ git checkout -b feature/awesome-azure-sample
 
 ## Naming & Layout Conventions
 
-- Folder names: PascalCase or kebab-case—choose one and stay consistent.
-- IaC modules: group by resource type (e.g. Networking, Compute, Storage).
-- Pipeline files: keep at DevOps/ root or in subfolders per service.
-- Documentation: use Markdown in docs/, with clear cross-links.
+- **Folder names:** PascalCase or kebab-case—choose one and stay consistent.
+- **IaC modules:** group by resource type (e.g. `Networking`, `Compute`, `Storage`).
+- **Pipeline files:** keep at `DevOps/` root or in subfolders per service.
+- **Documentation:** use Markdown in `docs/`, with clear cross-links.
 
 <br>
 
