@@ -25,7 +25,7 @@ A sample C# Azure Functions solution demonstrating:
 
 ---
 
-## Project Overview
+## 📝 Project Overview
 
 This repository contains a .NET 8.0 Azure Functions app showcasing:
 
@@ -38,7 +38,7 @@ Use this as a starter template for building serverless workflows on Azure Functi
 
 ---
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 - **Azure Subscription**  
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download)  
@@ -47,7 +47,7 @@ Use this as a starter template for building serverless workflows on Azure Functi
 
 ---
 
-## Solution Structure
+## 📁 Solution Structure
 ```plaintext
 Azure_Projects/
 ├── .vscode/ ← VS Code launch/debug settings
@@ -61,9 +61,9 @@ Azure_Projects/
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
-### Cloning & Setup
+1. ### Cloning & Setup
 
 ```bash
 git clone https://github.com/dubemliveson/Azure_Projects.git
@@ -75,7 +75,7 @@ Restore NuGet packages:
 dotnet restore
 ```
 
-### Running Locally
+2. ### Running Locally
 Start the Functions host:
 ```bash 
 func start
@@ -88,18 +88,21 @@ func start
 - **Timer Trigger**
   - `Recurring` will run automatically on startup and every 5 minutes by default.
 
-### Testing
-You can exercise the HTTP functions via *cURL*, *Postman*, or your browser:
+### 🧪 Testing
+You can test the HTTP functions via **cURL**, **Postman**, or your browser:
 ```bash
 curl -X POST http://localhost:7071/api/Echo \
      -H "Content-Type: application/json" \
      -d '{"message":"hello"}'`
 ```
+<br>
 
-## Deployment
+## ☁️ Deployment
 
 1. **Login** to Azure CLI:
-`az login`
+```bash
+az login
+```
 
 2. **Create** a Function App (one-time):
 ```bash
@@ -113,9 +116,13 @@ az functionapp create \
 ```
 
 3. **Publish** from your workspace:
-`func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
+```bash
+func azure functionapp publish <YOUR_FUNCTION_APP_NAME>
+```
 
-## Configuration
+<br>
+
+## 🔧 Configuration
 
 All app settings (connection strings, custom settings, etc.) live in Azure’s *Configuration* blade or your local `local.settings.json`.
 Be sure to add:
@@ -134,17 +141,18 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 
 `GET /api/GetSettingInfo?key=MyCustomSetting`
 
-## Contributing
+<br>
+
+## 🤝 Contributing
 
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/foo`)
 3. Commit your changes
 4. Open a Pull Request
 
+<br>
 
-## Additional Resources
-
-## Additional Resources
+## 📚 Additional Resources
 
 - **Step-by-Step Azure Functions Tutorial**  
   A full walkthrough of building and deploying these Azure Functions in C#.  
