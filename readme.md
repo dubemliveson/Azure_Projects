@@ -1,11 +1,135 @@
-# TimerTrigger - C<span>#</span>
+# Azure_Projects
 
-The `TimerTrigger` makes it incredibly easy to have your functions executed on a schedule. This sample demonstrates a simple use case of calling your function every 5 minutes.
+A sample C# Azure Functions solution demonstrating:
 
-## How it works
+- **HTTP-triggered** functions (`Echo`, `GetSettingInfo`)  
+- **Timer-triggered** (“recurring”) functions  
+- Configuration via **Application Settings**  
+- Local emulation and cloud deployment  
 
-For a `TimerTrigger` to work, you provide a schedule in the form of a [cron expression](https://en.wikipedia.org/wiki/Cron#CRON_expression)(See the link for full details). A cron expression is a string with 6 separate expressions which represent a given schedule via patterns. The pattern we use to represent every 5 minutes is `0 */5 * * * *`. This, in plain text, means: "When seconds is equal to 0, minutes is divisible by 5, for any hour, day of the month, month, day of the week, or year".
+---
 
-## Learn more
+## 📄 Table of Contents
 
-<TODO> Documentation
+1. [Project Overview](#project-overview)  
+2. [Prerequisites](#prerequisites)  
+3. [Solution Structure](#solution-structure)  
+4. [Getting Started](#getting-started)  
+   - [Cloning & Setup](#cloning--setup)  
+   - [Running Locally](#running-locally)  
+   - [Testing](#testing)  
+5. [Deployment](#deployment)  
+6. [Configuration](#configuration)  
+7. [Contributing](#contributing)  
+8. [License](#license)  
+
+---
+
+## Project Overview
+
+This repository contains a .NET 8.0 Azure Functions app showcasing:
+
+- **`Echo`** — An HTTP-triggered function that echoes back request payloads.  
+- **`GetSettingInfo`** — Reads from Application Settings (environment) and returns key values.  
+- **`Recurring`** — A Timer-triggered function running on a schedule (default: every 5 minutes).  
+
+Use this as a starter template for building serverless workflows on Azure Functions.
+
+---
+
+## Prerequisites
+
+- **Azure Subscription**  
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download)  
+- [Azure Functions Core Tools v5+](https://docs.microsoft.com/azure/azure-functions/functions-run-local#v2)  
+- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) _(for deployment)_
+
+---
+
+## Solution Structure
+
+Azure_Projects/
+├── .vscode/ ← VS Code launch/debug settings
+├── Echo.cs ← HTTP Trigger: echo back request data
+├── GetSettingInfo.cs ← HTTP Trigger: read & display App Settings
+├── Recurring.cs ← Timer Trigger: runs per cron schedule
+├── host.json ← Functions host configuration
+├── func.csproj ← C# project file & NuGet dependencies
+└── readme.md ← (this file)
+
+
+---
+
+## Getting Started
+
+### Cloning & Setup
+
+```bash
+git clone https://github.com/dubemliveson/Azure_Projects.git
+cd Azure_Projects
+```
+
+Restore NuGet packages:
+```dotnet restore```
+
+### Running Locally
+Start the Functions host:
+```func start```
+
+- **HTTP APIs**
+ - `Echo`: `GET|POST http://localhost:7071/api/Echo`
+ - `GetSettingInfo`:
+`GET http://localhost:7071/api/GetSettingInfo?key=<YourSettingName>`
+- **Timer Trigger**
+ - `Recurring` will run automatically on startup and every 5 minutes by default.
+
+### Testing
+You can exercise the HTTP functions via cURL, Postman, or your browser:
+`curl -X POST http://localhost:7071/api/Echo \
+     -H "Content-Type: application/json" \
+     -d '{"message":"hello"}'`
+
+## Deployment
+
+1. Login to Azure CLI:
+`az login`
+
+2. Create a Function App (one-time):
+`az functionapp create \
+  --resource-group MyResourceGroup \
+  --consumption-plan-location westus \
+  --runtime dotnet \
+  --functions-version 5 \
+  --name <YOUR_FUNCTION_APP_NAME> \
+  --storage-account <YOUR_STORAGE_ACCOUNT>`
+
+3. Publish from your workspace:
+`func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
+
+## Configuration
+
+All app settings (connection strings, custom settings, etc.) live in Azure’s Configuration blade or your local `local.settings.json`.
+Be sure to add:
+```json {
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<Your_Storage_Conn_String>",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "MyCustomSetting": "SomeValue"
+  }
+}
+```
+
+You can then read MyCustomSetting via the GetSettingInfo function:
+
+`GET /api/GetSettingInfo?key=MyCustomSetting`
+
+## Contributing
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/foo`)
+3. Commit your changes
+4. Open a Pull Request
+
+
+
