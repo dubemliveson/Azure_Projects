@@ -48,7 +48,7 @@ Azure_Projects/
 - **Functions/EchoSample:**
     A minimal C# HTTP-triggered function that echoes payloads.
 - **Functions/SettingsReader:**
-    Demo of reading and returning Azure Function App Settings.
+    Demo of reading and returning Azure Function App Settings from Blob Storage.
 - **Functions/RecurringJob:**
     Timer-triggered function that runs on a schedule.
 (*More coming soon…*)
