@@ -70,9 +70,9 @@ mkdir -p Functions/MyNewFunctionApp
 - How to build/run locally
 - How to deploy
 
-<br>
-
 5. Commit & push, then update this top-level README.md under Current Projects.
+
+<br>
 
 ## 🤝 Contributing
 1. Fork the repo.
