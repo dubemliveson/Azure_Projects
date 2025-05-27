@@ -51,6 +51,7 @@ Azure_Projects/
     Demo of reading and returning Azure Function App Settings from Blob Storage.
 - **Functions/RecurringJob:**
     Timer-triggered function that runs on a schedule.
+  <br>
 (*More coming soon…*)
 
 <br>
