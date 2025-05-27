@@ -63,7 +63,7 @@ Azure_Projects/
 
 ## 🚀 Getting Started
 
-### Cloning & Setup
+- ### Cloning & Setup
 
 ```bash
 git clone https://github.com/dubemliveson/Azure_Projects.git
@@ -75,7 +75,7 @@ Restore NuGet packages:
 dotnet restore
 ```
 
-### Running Locally
+- ### Running Locally
 Start the Functions host:
 ```bash 
 func start
