@@ -43,11 +43,11 @@ Azure_Projects/
 ## Current Projects
 
 - Functions/EchoSample
-A minimal C# HTTP-triggered function that echoes payloads.
+    A minimal C# HTTP-triggered function that echoes payloads.
 - Functions/SettingsReader
-Demo of reading and returning Azure Function App Settings.
+    Demo of reading and returning Azure Function App Settings.
 - Functions/RecurringJob
-Timer-triggered function that runs on a schedule.
+    Timer-triggered function that runs on a schedule.
 (*More coming soon…*)
 
 ## Adding a New Project
@@ -76,7 +76,7 @@ git checkout -b feature/awesome-azure-sample
 3. Add your project, tests, and documentation.
 4. Open a Pull Request for review.
 
---
+<br>
 
 ## Naming & Layout Conventions
 
@@ -84,6 +84,8 @@ git checkout -b feature/awesome-azure-sample
 - IaC modules: group by resource type (e.g. Networking, Compute, Storage).
 - Pipeline files: keep at DevOps/ root or in subfolders per service.
 - Documentation: use Markdown in docs/, with clear cross-links.
+
+<br>
 
 ## Prerequisites & Tooling
 
