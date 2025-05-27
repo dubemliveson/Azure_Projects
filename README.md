@@ -3,7 +3,7 @@
 A central repository for all Azure-related code samples and automation.  
 Use this space to collect your Functions, API Management configurations, Infrastructure as Code, DevOps pipelines, and more—all organized by project type.
 
----
+<br>
 
 ## 📖 Table of Contents
 
@@ -15,13 +15,13 @@ Use this space to collect your Functions, API Management configurations, Infrast
 6. [Naming & Layout Conventions](#naming--layout-conventions)  
 7. [Prerequisites & Tooling](#prerequisites--tooling)  
 
----
+<br>
 
-## 📝 Overview
+## 🗺 Overview
 
 This repo is intended as a one-stop shop for your Azure samples and automation. Keep each logical piece of work in its own folder—whether it’s a Functions app, an ARM template, a Bicep module, or an API Management deployment configuration.
 
----
+<br>
 
 ## 📁 Repository Structure
 
@@ -40,7 +40,9 @@ Azure_Projects/
 └── README.md             ← (this file)
 ```
 
-## Current Projects
+<br>
+
+## 🎛 Current Projects
 
 - Functions/EchoSample:
     A minimal C# HTTP-triggered function that echoes payloads.
@@ -49,6 +51,8 @@ Azure_Projects/
 - Functions/RecurringJob:
     Timer-triggered function that runs on a schedule.
 (*More coming soon…*)
+
+<br>
 
 ## 📥 Adding a New Project
 
@@ -63,6 +67,8 @@ mkdir -p Functions/MyNewFunctionApp
 - Prerequisites
 - How to build/run locally
 - How to deploy
+
+<br>
 
 5. Commit & push, then update this top-level README.md under Current Projects.
 
