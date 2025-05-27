@@ -38,7 +38,7 @@ Use this as a starter template for building serverless workflows on Azure Functi
 
 ---
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 - **Azure Subscription**  
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download)  
@@ -47,7 +47,7 @@ Use this as a starter template for building serverless workflows on Azure Functi
 
 ---
 
-## Solution Structure
+## 📁 Solution Structure
 ```plaintext
 Azure_Projects/
 ├── .vscode/ ← VS Code launch/debug settings
@@ -61,7 +61,7 @@ Azure_Projects/
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Cloning & Setup
 
@@ -88,7 +88,7 @@ func start
 - **Timer Trigger**
   - `Recurring` will run automatically on startup and every 5 minutes by default.
 
-### Testing
+### 🧪 Testing
 You can exercise the HTTP functions via *cURL*, *Postman*, or your browser:
 ```bash
 curl -X POST http://localhost:7071/api/Echo \
@@ -96,7 +96,7 @@ curl -X POST http://localhost:7071/api/Echo \
      -d '{"message":"hello"}'`
 ```
 
-## Deployment
+## ☁️ Deployment
 
 1. **Login** to Azure CLI:
 `az login`
@@ -115,7 +115,7 @@ az functionapp create \
 3. **Publish** from your workspace:
 `func azure functionapp publish <YOUR_FUNCTION_APP_NAME>`
 
-## Configuration
+## 🔧 Configuration
 
 All app settings (connection strings, custom settings, etc.) live in Azure’s *Configuration* blade or your local `local.settings.json`.
 Be sure to add:
@@ -134,7 +134,7 @@ You can then read `MyCustomSetting` via the `GetSettingInfo` function:
 
 `GET /api/GetSettingInfo?key=MyCustomSetting`
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/foo`)
